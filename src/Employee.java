@@ -8,16 +8,16 @@ public class Employee {
     private String department;
     private String position;
 
-    Employee(String empName, int empIdNumber, String empDepartment, String empPosition){
-        name = empName;
-        idNumber = empIdNumber;
-        department = empDepartment;
-        position = empPosition;
+    Employee(String this.name, int this.idNumber, String this.department, String this.position){
+        name = this.name;
+        idNumber = this.idNumber;
+        department = this.department;
+        position = this.position;
     }
 
-    Employee(String empName, int empIdNumber){
-        name = empName;
-        idNumber = empIdNumber;
+    Employee(String this.name, int this.idNumber){
+        name = this.name;
+        idNumber = this.idNumber;
         department = " ";
         position = " ";
     }
@@ -27,6 +27,38 @@ public class Employee {
         idNumber = " ";
         department = " ";
         position = " ";
+    }
+
+    public void setName(){
+        this.name = name;
+    }
+
+    public void setIdNumber(){
+        this.idNumber = idNumber;
+    }
+
+    public void setDepartment(){
+        this.department = department;
+    }
+
+    public void setPosition(){
+        this.position = position;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public int getIdNumber(){
+        return idNumber;
+    }
+
+    public String getDepartment(){
+        return department;
+    }
+
+    public String getPosition(){
+        return position;
     }
 }
 
