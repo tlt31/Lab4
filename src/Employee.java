@@ -3,9 +3,31 @@
  */
 public class Employee {
 
-    public static void main(String[] args){
+    private String name;
+    private int idNumber;
+    private String department;
+    private String position;
 
-        String name, department, position;
-        int idNumber;
+    Employee(String empName, int empIdNumber, String empDepartment, String empPosition){
+        name = empName;
+        idNumber = empIdNumber;
+        department = empDepartment;
+        position = empPosition;
+    }
+
+    Employee(String empName, int empIdNumber){
+        name = empName;
+        idNumber = empIdNumber;
+        department = " ";
+        position = " ";
+    }
+
+    Employee(){
+        name = " ";
+        idNumber = " ";
+        department = " ";
+        position = " ";
     }
 }
+
+
