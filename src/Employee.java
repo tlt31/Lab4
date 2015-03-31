@@ -8,56 +8,64 @@ public class Employee {
     private String department;
     private String position;
 
-    Employee(String this.name, int this.idNumber, String this.department, String this.position){
-        name = this.name;
-        idNumber = this.idNumber;
-        department = this.department;
-        position = this.position;
+    public Employee(String ename, int eidNumber, String edepartment, String eposition){
+        name = ename;
+        idNumber = eidNumber;
+        department = edepartment;
+        position = eposition;
     }
 
-    Employee(String this.name, int this.idNumber){
-        name = this.name;
-        idNumber = this.idNumber;
+    public Employee(String ename, int eidNumber){
+        name = ename;
+        idNumber = eidNumber;
         department = " ";
         position = " ";
     }
 
-    Employee(){
-        name = " ";
-        idNumber = " ";
-        department = " ";
-        position = " ";
+    public Employee(){
+        name = "";
+        idNumber = 0;
+        department = "";
+        position = "";
     }
 
-    public void setName(){
-        this.name = name;
+    public void setName(String ename){
+
+        name = ename;
     }
 
-    public void setIdNumber(){
-        this.idNumber = idNumber;
+    public void setIdNumber(int eidNumber){
+
+        idNumber = eidNumber;
     }
 
-    public void setDepartment(){
-        this.department = department;
+    public void setDepartment(String eDepartment){
+
+        department = eDepartment;
     }
 
-    public void setPosition(){
-        this.position = position;
+    public void setPosition(String eposition){
+
+        position = eposition;
     }
 
     public String getName(){
+
         return name;
     }
 
     public int getIdNumber(){
+
         return idNumber;
     }
 
     public String getDepartment(){
+
         return department;
     }
 
     public String getPosition(){
+
         return position;
     }
 }
